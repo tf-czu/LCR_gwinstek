@@ -67,6 +67,8 @@ class LCR_8110G:
         
     
     def readFunc(self):
+        majorF = None
+        minorF = None
         cmd = ":meas:func:major?"
         major = self.sentCMD(cmd)
         if major is not None:
